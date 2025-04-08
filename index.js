@@ -6,6 +6,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+console.log("🚀 index.js запущен");
+
 app.post("/proxy", async (req, res) => {
   try {
     const response = await fetch("https://reestr.nostroy.ru/api/sro/all/member/list", {
